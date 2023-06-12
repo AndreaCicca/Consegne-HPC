@@ -1,0 +1,33 @@
+#SLURM_JOB_NODELIST   : wn41
+#CUDA_VISIBLE_DEVICES : 0
+size A= 100 X 100,B= 100 X 100
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Tesla P100-PCIE-12GB" with compute capability 6.0
+
+Size: 96x96, 96x96
+Naive CPU (Golden Reference)
+Processing time: 5.504608 (ms), GFLOPS: 0.321453 
+GPU SDK Sample
+Processing time: 0.165408 (ms), GFLOPS: 10.697620 
+Total Errors = 0 
+Naive GPU
+Processing time: 0.080032 (ms), GFLOPS: 22.109556 
+Total Errors = 0 
+Tiling GPU
+Processing time: 0.077120 (ms), GFLOPS: 22.944398 
+Total Errors = 0 
+Global mem coalescing GPU
+Processing time: 0.073728 (ms), GFLOPS: 24.000000 
+Total Errors = 0 
+Remove shared mem bank conflict GPU
+Processing time: 0.067360 (ms), GFLOPS: 26.268884 
+Total Errors = 0 
+Threads perform computation optimization GPU
+Processing time: 0.085792 (ms), GFLOPS: 20.625140 
+Total Errors = 0 
+Loop unrolling GPU
+Processing time: 0.083040 (ms), GFLOPS: 21.308670 
+Total Errors = 0 
+Prefetching GPU
+Processing time: 0.081088 (ms), GFLOPS: 21.821626 
+Total Errors = 0 

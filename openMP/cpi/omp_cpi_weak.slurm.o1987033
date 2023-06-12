@@ -1,0 +1,8 @@
+./omp_cpi -n 50000000 -t 1
+#Funct  Inter  pi    error   time  thread   hostname 
+./omp_cpi -n 100000000 -t 2
+#Funct  Inter  pi    error   time  thread   hostname 
+./omp_cpi -n 200000000 -t 4
+#Funct  Inter  pi    error   time  thread   hostname 
+./omp_cpi -n 400000000 -t 8
+#Funct  Inter  pi    error   time  thread   hostname 

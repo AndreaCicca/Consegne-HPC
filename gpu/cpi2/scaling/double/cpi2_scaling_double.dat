@@ -1,0 +1,25 @@
+Numero blocchi, Errore stimato, Tempo di esecuzione
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+128, 5.806764713511825e-08, 0.061088 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+256, 2.053003411717214e-08, 0.054208 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+512, 7.258467604742691e-09, 0.051264 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+1024, 2.566255208336088e-09, 0.055680 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+2048, 9.073080065036265e-10, 0.069472 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+4096, 3.207780707725760e-10, 0.094880 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+8192, 1.134150551251878e-10, 0.144288 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+16384, 4.010392018471975e-11, 0.240960 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+32768, 1.418953843312920e-11, 0.437504 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+65536, 5.031086658391359e-12, 0.826592 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+131072, 1.799449478312454e-12, 1.606464 
+# Numero blocchi, Errore stimato, Tempo di esecuzione
+262144, 6.061817714453355e-13, 3.169376 

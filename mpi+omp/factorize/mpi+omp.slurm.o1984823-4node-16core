@@ -1,0 +1,201 @@
+#SLURM_JOB_NODELIST      : wn[22-25]
+#SLURM_JOB_CPUS_PER_NODE : 16(x4)
+
+# Modulus: F27F04CC3A51A3090B7D 80 bits - prime 40 bit: address 6 bit, block 34 bit 
+
+Task 0/64 - block Address size 1, range 0-0 
+Task 32/64 - block Address size 1, range 32-32 
+Task 1/64 - block Address size 1, range 1-1 
+Task 48/64 - block Address size 1, range 48-48 
+Task 33/64 - block Address size 1, range 33-33 
+Task 16/64 - block Address size 1, range 16-16 
+Task 2/64 - block Address size 1, range 2-2 
+Task 49/64 - block Address size 1, range 49-49 
+Task 34/64 - block Address size 1, range 34-34 
+Task 17/64 - block Address size 1, range 17-17 
+Task 3/64 - block Address size 1, range 3-3 
+Task 50/64 - block Address size 1, range 50-50 
+Task 35/64 - block Address size 1, range 35-35 
+Task 18/64 - block Address size 1, range 18-18 
+Task 4/64 - block Address size 1, range 4-4 
+Task 51/64 - block Address size 1, range 51-51 
+Task 36/64 - block Address size 1, range 36-36 
+Task 19/64 - block Address size 1, range 19-19 
+Task 5/64 - block Address size 1, range 5-5 
+Task 52/64 - block Address size 1, range 52-52 
+Task 37/64 - block Address size 1, range 37-37 
+Task 20/64 - block Address size 1, range 20-20 
+Task 6/64 - block Address size 1, range 6-6 
+Task 53/64 - block Address size 1, range 53-53 
+Task 38/64 - block Address size 1, range 38-38 
+Task 21/64 - block Address size 1, range 21-21 
+Task 7/64 - block Address size 1, range 7-7 
+Task 54/64 - block Address size 1, range 54-54 
+Task 39/64 - block Address size 1, range 39-39 
+Task 22/64 - block Address size 1, range 22-22 
+Task 8/64 - block Address size 1, range 8-8 
+Task 55/64 - block Address size 1, range 55-55 
+Task 40/64 - block Address size 1, range 40-40 
+Task 23/64 - block Address size 1, range 23-23 
+Task 9/64 - block Address size 1, range 9-9 
+Task 56/64 - block Address size 1, range 56-56 
+Task 41/64 - block Address size 1, range 41-41 
+Task 24/64 - block Address size 1, range 24-24 
+Task 10/64 - block Address size 1, range 10-10 
+Task 57/64 - block Address size 1, range 57-57 
+Task 42/64 - block Address size 1, range 42-42 
+Task 25/64 - block Address size 1, range 25-25 
+Task 11/64 - block Address size 1, range 11-11 
+Task 58/64 - block Address size 1, range 58-58 
+Task 43/64 - block Address size 1, range 43-43 
+Task 26/64 - block Address size 1, range 26-26 
+Task 12/64 - block Address size 1, range 12-12 
+Task 59/64 - block Address size 1, range 59-59 
+Task 44/64 - block Address size 1, range 44-44 
+Task 27/64 - block Address size 1, range 27-27 
+Task 13/64 - block Address size 1, range 13-13 
+Task 60/64 - block Address size 1, range 60-60 
+Task 45/64 - block Address size 1, range 45-45 
+Task 28/64 - block Address size 1, range 28-28 
+Task 14/64 - block Address size 1, range 14-14 
+Task 61/64 - block Address size 1, range 61-61 
+Task 46/64 - block Address size 1, range 46-46 
+Task 29/64 - block Address size 1, range 29-29 
+Task 15/64 - block Address size 1, range 15-15 
+Task 62/64 - block Address size 1, range 62-62 
+Task 47/64 - block Address size 1, range 47-47 
+Task 30/64 - block Address size 1, range 30-30 
+Task 63/64 - block Address size 1, range 63-63 
+Task 31/64 - block Address size 1, range 31-31 
+Task 61/64 - block 61 - FOUND: F4C9E8F37B
+Task 61/64  exiting,  time 560.0 sec.  
+Task 63/64 - block 63 - FOUND: FD9A3AAF67
+Task 63/64  exiting,  time 1136.0 sec.  
+Task 20/64 - block 20 - NOT found
+Task 20/64  exiting,  time 2570.0 sec.  
+Task 21/64 - block 21 - NOT found
+Task 21/64  exiting,  time 2578.0 sec.  
+Task 24/64 - block 24 - NOT found
+Task 24/64  exiting,  time 2588.0 sec.  
+Task 16/64 - block 16 - NOT found
+Task 16/64  exiting,  time 2588.0 sec.  
+Task 30/64 - block 30 - NOT found
+Task 30/64  exiting,  time 2588.0 sec.  
+Task 28/64 - block 28 - NOT found
+Task 28/64  exiting,  time 2588.0 sec.  
+Task 22/64 - block 22 - NOT found
+Task 22/64  exiting,  time 2588.0 sec.  
+Task 26/64 - block 26 - NOT found
+Task 26/64  exiting,  time 2588.0 sec.  
+Task 18/64 - block 18 - NOT found
+Task 18/64  exiting,  time 2588.0 sec.  
+Task 23/64 - block 23 - NOT found
+Task 23/64  exiting,  time 2592.0 sec.  
+Task 27/64 - block 27 - NOT found
+Task 27/64  exiting,  time 2592.0 sec.  
+Task 19/64 - block 19 - NOT found
+Task 19/64  exiting,  time 2592.0 sec.  
+Task 29/64 - block 29 - NOT found
+Task 29/64  exiting,  time 2592.0 sec.  
+Task 17/64 - block 17 - NOT found
+Task 17/64  exiting,  time 2592.0 sec.  
+Task 31/64 - block 31 - NOT found
+Task 31/64  exiting,  time 2592.0 sec.  
+Task 25/64 - block 25 - NOT found
+Task 25/64  exiting,  time 2594.0 sec.  
+Task 58/64 - block 58 - NOT found
+Task 58/64  exiting,  time 2808.0 sec.  
+Task 46/64 - block 46 - NOT found
+Task 46/64  exiting,  time 2810.0 sec.  
+Task 42/64 - block 42 - NOT found
+Task 42/64  exiting,  time 2810.0 sec.  
+Task 36/64 - block 36 - NOT found
+Task 36/64  exiting,  time 2810.0 sec.  
+Task 59/64 - block 59 - NOT found
+Task 59/64  exiting,  time 2816.0 sec.  
+Task 37/64 - block 37 - NOT found
+Task 37/64  exiting,  time 2818.0 sec.  
+Task 43/64 - block 43 - NOT found
+Task 43/64  exiting,  time 2818.0 sec.  
+Task 47/64 - block 47 - NOT found
+Task 47/64  exiting,  time 2818.0 sec.  
+Task 48/64 - block 48 - NOT found
+Task 48/64  exiting,  time 2826.0 sec.  
+Task 50/64 - block 50 - NOT found
+Task 50/64  exiting,  time 2826.0 sec.  
+Task 56/64 - block 56 - NOT found
+Task 56/64  exiting,  time 2826.0 sec.  
+Task 52/64 - block 52 - NOT found
+Task 52/64  exiting,  time 2826.0 sec.  
+Task 54/64 - block 54 - NOT found
+Task 54/64  exiting,  time 2826.0 sec.  
+Task 32/64 - block 32 - NOT found
+Task 32/64  exiting,  time 2828.0 sec.  
+Task 40/64 - block 40 - NOT found
+Task 40/64  exiting,  time 2828.0 sec.  
+Task 38/64 - block 38 - NOT found
+Task 38/64  exiting,  time 2828.0 sec.  
+Task 44/64 - block 44 - NOT found
+Task 44/64  exiting,  time 2828.0 sec.  
+Task 34/64 - block 34 - NOT found
+Task 34/64  exiting,  time 2828.0 sec.  
+Task 8/64 - block 8 - NOT found
+Task 8/64  exiting,  time 2830.0 sec.  
+Task 10/64 - block 10 - NOT found
+Task 10/64  exiting,  time 2830.0 sec.  
+Task 49/64 - block 49 - NOT found
+Task 49/64  exiting,  time 2830.0 sec.  
+Task 57/64 - block 57 - NOT found
+Task 57/64  exiting,  time 2832.0 sec.  
+Task 51/64 - block 51 - NOT found
+Task 51/64  exiting,  time 2832.0 sec.  
+Task 53/64 - block 53 - NOT found
+Task 53/64  exiting,  time 2832.0 sec.  
+Task 55/64 - block 55 - NOT found
+Task 55/64  exiting,  time 2832.0 sec.  
+Task 33/64 - block 33 - NOT found
+Task 33/64  exiting,  time 2832.0 sec.  
+Task 41/64 - block 41 - NOT found
+Task 41/64  exiting,  time 2832.0 sec.  
+Task 39/64 - block 39 - NOT found
+Task 39/64  exiting,  time 2832.0 sec.  
+Task 45/64 - block 45 - NOT found
+Task 45/64  exiting,  time 2832.0 sec.  
+Task 35/64 - block 35 - NOT found
+Task 35/64  exiting,  time 2832.0 sec.  
+Task 11/64 - block 11 - NOT found
+Task 11/64  exiting,  time 2838.0 sec.  
+Task 9/64 - block 9 - NOT found
+Task 9/64  exiting,  time 2838.0 sec.  
+Task 62/64 - block 62 - NOT found
+Task 62/64  exiting,  time 2846.0 sec.  
+Task 12/64 - block 12 - NOT found
+Task 12/64  exiting,  time 2850.0 sec.  
+Task 6/64 - block 6 - NOT found
+Task 6/64  exiting,  time 2850.0 sec.  
+Task 2/64 - block 2 - NOT found
+Task 2/64  exiting,  time 2850.0 sec.  
+Task 0/64 - block 0 - NOT found
+Task 0/64  exiting,  time 2850.0 sec.  
+Task 14/64 - block 14 - NOT found
+Task 14/64  exiting,  time 2850.0 sec.  
+Task 4/64 - block 4 - NOT found
+Task 4/64  exiting,  time 2850.0 sec.  
+Task 60/64 - block 60 - NOT found
+Task 60/64  exiting,  time 2854.0 sec.  
+Task 5/64 - block 5 - NOT found
+Task 5/64  exiting,  time 2854.0 sec.  
+Task 1/64 - block 1 - NOT found
+Task 1/64  exiting,  time 2856.0 sec.  
+Task 13/64 - block 13 - NOT found
+Task 13/64  exiting,  time 2856.0 sec.  
+Task 7/64 - block 7 - NOT found
+Task 7/64  exiting,  time 2856.0 sec.  
+Task 15/64 - block 15 - NOT found
+Task 15/64  exiting,  time 2856.0 sec.  
+Task 3/64 - block 3 - NOT found
+Task 3/64  exiting,  time 2856.0 sec.  
+
+real	47m42.801s
+user	0m0.029s
+sys	0m0.036s

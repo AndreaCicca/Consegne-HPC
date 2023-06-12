@@ -1,0 +1,272 @@
+
+# Modulus:C1107FA48AE45B16C3 p:0 q:0 72 bits - prime: address 6 bit, block 30 bit 
+
+# Thr:3  time:68.6  Blk:27 9C0000001-9FFFFFFFF not found 
+# Thr:2  time:68.7  Blk:2F BC0000001-BFFFFFFFF not found 
+# Thr:0  time:69.1  Blk:3F FC0000001-FFFFFFFFF not found 
+# Thr:1  time:69.9  Blk:37 DC0000001-DFFFFFFFF not found 
+# Thr:5  time:70.3  Blk:17 5C0000001-5FFFFFFFF not found 
+# Thr:7  time:70.7  Blk:7 1C0000001-1FFFFFFFF not found 
+# Thr:6  time:70.9  Blk:F 3C0000001-3FFFFFFFF not found 
+# Thr:4  time:70.9  Blk:1F 7C0000001-7FFFFFFFF not found 
+# Thr:7  time:45.4  Blk:6 180000001-1BFFFFFFF FOUND 
+# Thr:0  time:47.0  Blk:3E F80000001-FBFFFFFFF skip 
+# Thr:2  time:47.5  Blk:2E B80000001-BBFFFFFFF skip 
+# Thr:4  time:45.2  Blk:1E 780000001-7BFFFFFFF skip 
+# Thr:0  time:0.0  Blk:3D F40000001-F7FFFFFFF skip 
+# Thr:3  time:47.5  Blk:26 980000001-9BFFFFFFF skip 
+# Thr:2  time:0.0  Blk:2D B40000001-B7FFFFFFF skip 
+# Thr:3  time:0.0  Blk:25 940000001-97FFFFFFF skip 
+# Thr:2  time:0.0  Blk:2C B00000001-B3FFFFFFF skip 
+# Thr:3  time:0.0  Blk:24 900000001-93FFFFFFF skip 
+# Thr:2  time:0.0  Blk:2B AC0000001-AFFFFFFFF skip 
+# Thr:3  time:0.0  Blk:23 8C0000001-8FFFFFFFF skip 
+# Thr:2  time:0.0  Blk:2A A80000001-ABFFFFFFF skip 
+# Thr:3  time:0.0  Blk:22 880000001-8BFFFFFFF skip 
+# Thr:2  time:0.0  Blk:29 A40000001-A7FFFFFFF skip 
+# Thr:3  time:0.0  Blk:21 840000001-87FFFFFFF skip 
+# Thr:2  time:0.0  Blk:28 A00000001-A3FFFFFFF skip 
+# Thr:3  time:0.0  Blk:20 800000001-83FFFFFFF skip 
+# Thr:0  time:0.0  Blk:3C F00000001-F3FFFFFFF skip 
+# Thr:7  time:0.0  Blk:5 140000001-17FFFFFFF skip 
+# Thr:4  time:0.0  Blk:1D 740000001-77FFFFFFF skip 
+# Thr:0  time:0.0  Blk:3B EC0000001-EFFFFFFFF skip 
+# Thr:7  time:0.0  Blk:4 100000001-13FFFFFFF skip 
+# Thr:4  time:0.0  Blk:1C 700000001-73FFFFFFF skip 
+# Thr:0  time:0.0  Blk:3A E80000001-EBFFFFFFF skip 
+# Thr:7  time:0.0  Blk:3 C0000001-FFFFFFFF skip 
+# Thr:5  time:45.8  Blk:16 580000001-5BFFFFFFF skip 
+# Thr:1  time:46.3  Blk:36 D80000001-DBFFFFFFF skip 
+# Thr:6  time:45.3  Blk:E 380000001-3BFFFFFFF skip 
+# Thr:1  time:0.0  Blk:35 D40000001-D7FFFFFFF skip 
+# Thr:6  time:0.0  Blk:D 340000001-37FFFFFFF skip 
+# Thr:5  time:0.0  Blk:15 540000001-57FFFFFFF skip 
+# Thr:6  time:0.0  Blk:C 300000001-33FFFFFFF skip 
+# Thr:5  time:0.0  Blk:14 500000001-53FFFFFFF skip 
+# Thr:1  time:0.0  Blk:34 D00000001-D3FFFFFFF skip 
+# Thr:6  time:0.0  Blk:B 2C0000001-2FFFFFFFF skip 
+# Thr:5  time:0.0  Blk:13 4C0000001-4FFFFFFFF skip 
+# Thr:7  time:0.0  Blk:2 80000001-BFFFFFFF skip 
+# Thr:0  time:0.0  Blk:39 E40000001-E7FFFFFFF skip 
+# Thr:4  time:0.0  Blk:1B 6C0000001-6FFFFFFFF skip 
+# Thr:0  time:0.0  Blk:38 E00000001-E3FFFFFFF skip 
+# Thr:7  time:0.0  Blk:1 40000001-7FFFFFFF skip 
+# Thr:4  time:0.0  Blk:1A 680000001-6BFFFFFFF skip 
+# Thr:7  time:0.0  Blk:0 1-3FFFFFFF skip 
+# Thr:4  time:0.0  Blk:19 640000001-67FFFFFFF skip 
+# Thr:6  time:0.0  Blk:A 280000001-2BFFFFFFF skip 
+# Thr:5  time:0.0  Blk:12 480000001-4BFFFFFFF skip 
+# Thr:6  time:0.0  Blk:9 240000001-27FFFFFFF skip 
+# Thr:5  time:0.0  Blk:11 440000001-47FFFFFFF skip 
+# Thr:6  time:0.0  Blk:8 200000001-23FFFFFFF skip 
+# Thr:1  time:0.0  Blk:33 CC0000001-CFFFFFFFF skip 
+# Thr:5  time:0.0  Blk:10 400000001-43FFFFFFF skip 
+# Thr:1  time:0.0  Blk:32 C80000001-CBFFFFFFF skip 
+# Thr:4  time:0.0  Blk:18 600000001-63FFFFFFF skip 
+# Thr:1  time:0.0  Blk:31 C40000001-C7FFFFFFF skip 
+# Thr:1  time:0.0  Blk:30 C00000001-C3FFFFFFF skip 
+ 8 DAADB9FE3 116.1
+
+# Modulus:C1107FA48AE45B16C3 p:0 q:0 72 bits - prime: address 6 bit, block 30 bit 
+
+# Thr:0  time:71.1  Blk:3F FC0000001-FFFFFFFFF not found 
+# Thr:3  time:73.0  Blk:33 CC0000001-CFFFFFFFF not found 
+# Thr:15  time:73.0  Blk:3 C0000001-FFFFFFFF not found 
+# Thr:2  time:73.0  Blk:37 DC0000001-DFFFFFFFF not found 
+# Thr:10  time:73.0  Blk:17 5C0000001-5FFFFFFFF not found 
+# Thr:9  time:73.0  Blk:1B 6C0000001-6FFFFFFFF not found 
+# Thr:14  time:73.0  Blk:7 1C0000001-1FFFFFFFF not found 
+# Thr:5  time:73.0  Blk:2B AC0000001-AFFFFFFFF not found 
+# Thr:13  time:73.0  Blk:B 2C0000001-2FFFFFFFF not found 
+# Thr:4  time:73.0  Blk:2F BC0000001-BFFFFFFFF not found 
+# Thr:7  time:73.0  Blk:23 8C0000001-8FFFFFFFF not found 
+# Thr:1  time:73.0  Blk:3B EC0000001-EFFFFFFFF not found 
+# Thr:11  time:73.0  Blk:13 4C0000001-4FFFFFFFF not found 
+# Thr:6  time:73.0  Blk:27 9C0000001-9FFFFFFFF not found 
+# Thr:12  time:73.0  Blk:F 3C0000001-3FFFFFFFF not found 
+# Thr:8  time:73.1  Blk:1F 7C0000001-7FFFFFFFF not found 
+# Thr:3  time:47.7  Blk:32 C80000001-CBFFFFFFF FOUND 
+# Thr:13  time:47.6  Blk:A 280000001-2BFFFFFFF skip 
+# Thr:14  time:47.6  Blk:6 180000001-1BFFFFFFF skip 
+# Thr:0  time:49.5  Blk:3E F80000001-FBFFFFFFF skip 
+# Thr:13  time:0.0  Blk:9 240000001-27FFFFFFF skip 
+# Thr:0  time:0.0  Blk:3D F40000001-F7FFFFFFF skip 
+# Thr:2  time:47.6  Blk:36 D80000001-DBFFFFFFF skip 
+# Thr:5  time:47.6  Blk:2A A80000001-ABFFFFFFF skip 
+# Thr:13  time:0.0  Blk:8 200000001-23FFFFFFF skip 
+# Thr:0  time:0.0  Blk:3C F00000001-F3FFFFFFF skip 
+# Thr:15  time:47.6  Blk:2 80000001-BFFFFFFF skip 
+# Thr:10  time:47.6  Blk:16 580000001-5BFFFFFFF skip 
+# Thr:15  time:0.0  Blk:1 40000001-7FFFFFFF skip 
+# Thr:3  time:0.0  Blk:31 C40000001-C7FFFFFFF skip 
+# Thr:15  time:0.0  Blk:0 1-3FFFFFFF skip 
+# Thr:10  time:0.0  Blk:15 540000001-57FFFFFFF skip 
+# Thr:14  time:0.0  Blk:5 140000001-17FFFFFFF skip 
+# Thr:10  time:0.0  Blk:14 500000001-53FFFFFFF skip 
+# Thr:14  time:0.0  Blk:4 100000001-13FFFFFFF skip 
+# Thr:2  time:0.0  Blk:35 D40000001-D7FFFFFFF skip 
+# Thr:5  time:0.0  Blk:29 A40000001-A7FFFFFFF skip 
+# Thr:2  time:0.0  Blk:34 D00000001-D3FFFFFFF skip 
+# Thr:5  time:0.0  Blk:28 A00000001-A3FFFFFFF skip 
+# Thr:8  time:47.6  Blk:1E 780000001-7BFFFFFFF skip 
+# Thr:9  time:47.6  Blk:1A 680000001-6BFFFFFFF skip 
+# Thr:8  time:0.0  Blk:1D 740000001-77FFFFFFF skip 
+# Thr:9  time:0.0  Blk:19 640000001-67FFFFFFF skip 
+# Thr:8  time:0.0  Blk:1C 700000001-73FFFFFFF skip 
+# Thr:9  time:0.0  Blk:18 600000001-63FFFFFFF skip 
+# Thr:7  time:47.6  Blk:22 880000001-8BFFFFFFF skip 
+# Thr:3  time:0.0  Blk:30 C00000001-C3FFFFFFF skip 
+# Thr:12  time:47.6  Blk:E 380000001-3BFFFFFFF skip 
+# Thr:1  time:47.6  Blk:3A E80000001-EBFFFFFFF skip 
+# Thr:11  time:47.6  Blk:12 480000001-4BFFFFFFF skip 
+# Thr:6  time:47.6  Blk:26 980000001-9BFFFFFFF skip 
+# Thr:12  time:0.0  Blk:D 340000001-37FFFFFFF skip 
+# Thr:6  time:0.0  Blk:25 940000001-97FFFFFFF skip 
+# Thr:11  time:0.0  Blk:11 440000001-47FFFFFFF skip 
+# Thr:6  time:0.0  Blk:24 900000001-93FFFFFFF skip 
+# Thr:11  time:0.0  Blk:10 400000001-43FFFFFFF skip 
+# Thr:12  time:0.0  Blk:C 300000001-33FFFFFFF skip 
+# Thr:1  time:0.0  Blk:39 E40000001-E7FFFFFFF skip 
+# Thr:4  time:47.6  Blk:2E B80000001-BBFFFFFFF skip 
+# Thr:1  time:0.0  Blk:38 E00000001-E3FFFFFFF skip 
+# Thr:4  time:0.0  Blk:2D B40000001-B7FFFFFFF skip 
+# Thr:7  time:0.0  Blk:21 840000001-87FFFFFFF skip 
+# Thr:4  time:0.0  Blk:2C B00000001-B3FFFFFFF skip 
+# Thr:7  time:0.0  Blk:20 800000001-83FFFFFFF skip 
+ 16 DAADB9FE3 120.6
+
+# Modulus:C1107FA48AE45B16C3 p:0 q:0 72 bits - prime: address 6 bit, block 30 bit 
+
+# Thr:0  time:72.9  Blk:3F FC0000001-FFFFFFFFF not found 
+# Thr:26  time:73.0  Blk:B 2C0000001-2FFFFFFFF not found 
+# Thr:13  time:73.0  Blk:25 940000001-97FFFFFFF not found 
+# Thr:20  time:73.0  Blk:17 5C0000001-5FFFFFFFF not found 
+# Thr:15  time:73.0  Blk:21 840000001-87FFFFFFF not found 
+# Thr:3  time:73.0  Blk:39 E40000001-E7FFFFFFF not found 
+# Thr:8  time:73.0  Blk:2F BC0000001-BFFFFFFFF not found 
+# Thr:28  time:73.0  Blk:7 1C0000001-1FFFFFFFF not found 
+# Thr:29  time:73.0  Blk:5 140000001-17FFFFFFF not found 
+# Thr:9  time:73.1  Blk:2D B40000001-B7FFFFFFF not found 
+# Thr:24  time:73.1  Blk:F 3C0000001-3FFFFFFFF not found 
+# Thr:25  time:73.1  Blk:D 340000001-37FFFFFFF not found 
+# Thr:30  time:73.1  Blk:3 C0000001-FFFFFFFF not found 
+# Thr:17  time:73.1  Blk:1D 740000001-77FFFFFFF not found 
+# Thr:10  time:73.1  Blk:2B AC0000001-AFFFFFFFF not found 
+# Thr:1  time:73.1  Blk:3D F40000001-F7FFFFFFF not found 
+# Thr:22  time:73.1  Blk:13 4C0000001-4FFFFFFFF not found 
+# Thr:27  time:73.1  Blk:9 240000001-27FFFFFFF not found 
+# Thr:16  time:73.1  Blk:1F 7C0000001-7FFFFFFFF not found 
+# Thr:6  time:73.1  Blk:33 CC0000001-CFFFFFFFF not found 
+# Thr:11  time:73.1  Blk:29 A40000001-A7FFFFFFF not found 
+# Thr:23  time:73.1  Blk:11 440000001-47FFFFFFF not found 
+# Thr:5  time:73.1  Blk:35 D40000001-D7FFFFFFF not found 
+# Thr:31  time:73.1  Blk:1 40000001-7FFFFFFF not found 
+# Thr:2  time:73.1  Blk:3B EC0000001-EFFFFFFFF not found 
+# Thr:12  time:73.1  Blk:27 9C0000001-9FFFFFFFF not found 
+# Thr:14  time:73.1  Blk:23 8C0000001-8FFFFFFFF not found 
+# Thr:4  time:73.1  Blk:37 DC0000001-DFFFFFFFF not found 
+# Thr:19  time:73.1  Blk:19 640000001-67FFFFFFF not found 
+# Thr:7  time:73.1  Blk:31 C40000001-C7FFFFFFF not found 
+# Thr:21  time:73.4  Blk:15 540000001-57FFFFFFF not found 
+# Thr:18  time:73.5  Blk:1B 6C0000001-6FFFFFFFF not found 
+# Thr:14  time:35.8  Blk:22 880000001-8BFFFFFFF FOUND 
+# Thr:27  time:35.8  Blk:8 200000001-23FFFFFFF skip 
+# Thr:16  time:35.8  Blk:1E 780000001-7BFFFFFFF skip 
+# Thr:0  time:35.9  Blk:3E F80000001-FBFFFFFFF skip 
+# Thr:20  time:35.9  Blk:16 580000001-5BFFFFFFF skip 
+# Thr:21  time:35.5  Blk:14 500000001-53FFFFFFF skip 
+# Thr:26  time:35.9  Blk:A 280000001-2BFFFFFFF skip 
+# Thr:13  time:35.9  Blk:24 900000001-93FFFFFFF skip 
+# Thr:7  time:35.7  Blk:30 C00000001-C3FFFFFFF skip 
+# Thr:11  time:35.8  Blk:28 A00000001-A3FFFFFFF skip 
+# Thr:23  time:35.8  Blk:10 400000001-43FFFFFFF skip 
+# Thr:5  time:35.8  Blk:34 D00000001-D3FFFFFFF skip 
+# Thr:22  time:35.8  Blk:12 480000001-4BFFFFFFF skip 
+# Thr:1  time:35.8  Blk:3C F00000001-F3FFFFFFF skip 
+# Thr:4  time:35.8  Blk:36 D80000001-DBFFFFFFF skip 
+# Thr:10  time:35.8  Blk:2A A80000001-ABFFFFFFF skip 
+# Thr:28  time:35.8  Blk:6 180000001-1BFFFFFFF skip 
+# Thr:3  time:35.8  Blk:38 E00000001-E3FFFFFFF skip 
+# Thr:15  time:35.8  Blk:20 800000001-83FFFFFFF skip 
+# Thr:24  time:35.8  Blk:E 380000001-3BFFFFFFF skip 
+# Thr:17  time:35.8  Blk:1C 700000001-73FFFFFFF skip 
+# Thr:29  time:35.8  Blk:4 100000001-13FFFFFFF skip 
+# Thr:8  time:35.8  Blk:2E B80000001-BBFFFFFFF skip 
+# Thr:9  time:35.8  Blk:2C B00000001-B3FFFFFFF skip 
+# Thr:18  time:35.3  Blk:1A 680000001-6BFFFFFFF skip 
+# Thr:12  time:35.8  Blk:26 980000001-9BFFFFFFF skip 
+# Thr:31  time:35.8  Blk:0 1-3FFFFFFF skip 
+# Thr:19  time:35.8  Blk:18 600000001-63FFFFFFF skip 
+# Thr:25  time:35.8  Blk:C 300000001-33FFFFFFF skip 
+# Thr:2  time:35.8  Blk:3A E80000001-EBFFFFFFF skip 
+# Thr:30  time:35.8  Blk:2 80000001-BFFFFFFF skip 
+# Thr:6  time:35.8  Blk:32 C80000001-CBFFFFFFF skip 
+ 32 E203AA3A1 108.9
+
+# Modulus:C1107FA48AE45B16C3 p:0 q:0 72 bits - prime: address 6 bit, block 30 bit 
+
+# Thr:19  time:45.1  Blk:2C B00000001-B3FFFFFFF FOUND 
+# Thr:3  time:45.1  Blk:3C F00000001-F3FFFFFFF skip 
+# Thr:24  time:45.1  Blk:27 9C0000001-9FFFFFFFF skip 
+# Thr:21  time:45.1  Blk:2A A80000001-ABFFFFFFF skip 
+# Thr:25  time:45.1  Blk:26 980000001-9BFFFFFFF skip 
+# Thr:9  time:45.1  Blk:36 D80000001-DBFFFFFFF skip 
+# Thr:35  time:45.1  Blk:1C 700000001-73FFFFFFF skip 
+# Thr:17  time:45.1  Blk:2E B80000001-BBFFFFFFF skip 
+# Thr:18  time:45.1  Blk:2D B40000001-B7FFFFFFF skip 
+# Thr:41  time:45.1  Blk:16 580000001-5BFFFFFFF skip 
+# Thr:4  time:45.1  Blk:3B EC0000001-EFFFFFFFF skip 
+# Thr:28  time:45.1  Blk:23 8C0000001-8FFFFFFFF skip 
+# Thr:57  time:45.1  Blk:6 180000001-1BFFFFFFF skip 
+# Thr:37  time:45.1  Blk:1A 680000001-6BFFFFFFF skip 
+# Thr:20  time:45.1  Blk:2B AC0000001-AFFFFFFFF skip 
+# Thr:8  time:45.1  Blk:37 DC0000001-DFFFFFFFF skip 
+# Thr:30  time:45.1  Blk:21 840000001-87FFFFFFF skip 
+# Thr:59  time:45.1  Blk:4 100000001-13FFFFFFF skip 
+# Thr:39  time:45.1  Blk:18 600000001-63FFFFFFF skip 
+# Thr:50  time:45.1  Blk:D 340000001-37FFFFFFF skip 
+# Thr:14  time:45.1  Blk:31 C40000001-C7FFFFFFF skip 
+# Thr:47  time:45.1  Blk:10 400000001-43FFFFFFF skip 
+# Thr:44  time:45.1  Blk:13 4C0000001-4FFFFFFFF skip 
+# Thr:1  time:45.1  Blk:3E F80000001-FBFFFFFFF skip 
+# Thr:16  time:45.1  Blk:2F BC0000001-BFFFFFFFF skip 
+# Thr:43  time:45.1  Blk:14 500000001-53FFFFFFF skip 
+# Thr:46  time:45.1  Blk:11 440000001-47FFFFFFF skip 
+# Thr:49  time:45.1  Blk:E 380000001-3BFFFFFFF skip 
+# Thr:51  time:45.1  Blk:C 300000001-33FFFFFFF skip 
+# Thr:22  time:45.1  Blk:29 A40000001-A7FFFFFFF skip 
+# Thr:26  time:45.1  Blk:25 940000001-97FFFFFFF skip 
+# Thr:55  time:45.1  Blk:8 200000001-23FFFFFFF skip 
+# Thr:34  time:45.1  Blk:1D 740000001-77FFFFFFF skip 
+# Thr:10  time:45.1  Blk:35 D40000001-D7FFFFFFF skip 
+# Thr:5  time:45.1  Blk:3A E80000001-EBFFFFFFF skip 
+# Thr:42  time:45.1  Blk:15 540000001-57FFFFFFF skip 
+# Thr:54  time:45.1  Blk:9 240000001-27FFFFFFF skip 
+# Thr:0  time:45.1  Blk:3F FC0000001-FFFFFFFFF skip 
+# Thr:7  time:45.1  Blk:38 E00000001-E3FFFFFFF skip 
+# Thr:48  time:45.1  Blk:F 3C0000001-3FFFFFFFF skip 
+# Thr:56  time:45.1  Blk:7 1C0000001-1FFFFFFFF skip 
+# Thr:36  time:45.1  Blk:1B 6C0000001-6FFFFFFFF skip 
+# Thr:45  time:45.1  Blk:12 480000001-4BFFFFFFF skip 
+# Thr:29  time:45.1  Blk:22 880000001-8BFFFFFFF skip 
+# Thr:31  time:45.1  Blk:20 800000001-83FFFFFFF skip 
+# Thr:38  time:45.1  Blk:19 640000001-67FFFFFFF skip 
+# Thr:12  time:45.1  Blk:33 CC0000001-CFFFFFFFF skip 
+# Thr:60  time:45.1  Blk:3 C0000001-FFFFFFFF skip 
+# Thr:63  time:45.1  Blk:0 1-3FFFFFFF skip 
+# Thr:33  time:45.1  Blk:1E 780000001-7BFFFFFFF skip 
+# Thr:27  time:45.1  Blk:24 900000001-93FFFFFFF skip 
+# Thr:32  time:45.1  Blk:1F 7C0000001-7FFFFFFFF skip 
+# Thr:2  time:45.1  Blk:3D F40000001-F7FFFFFFF skip 
+# Thr:61  time:45.1  Blk:2 80000001-BFFFFFFF skip 
+# Thr:6  time:45.1  Blk:39 E40000001-E7FFFFFFF skip 
+# Thr:53  time:45.1  Blk:A 280000001-2BFFFFFFF skip 
+# Thr:52  time:45.1  Blk:B 2C0000001-2FFFFFFFF skip 
+# Thr:13  time:45.1  Blk:32 C80000001-CBFFFFFFF skip 
+# Thr:58  time:45.1  Blk:5 140000001-17FFFFFFF skip 
+# Thr:23  time:45.1  Blk:28 A00000001-A3FFFFFFF skip 
+# Thr:15  time:45.1  Blk:30 C00000001-C3FFFFFFF skip 
+# Thr:11  time:45.1  Blk:34 D00000001-D3FFFFFFF skip 
+# Thr:40  time:45.1  Blk:17 5C0000001-5FFFFFFFF skip 
+# Thr:62  time:45.1  Blk:1 40000001-7FFFFFFF skip 
+ 64 E203AA3A1 45.2

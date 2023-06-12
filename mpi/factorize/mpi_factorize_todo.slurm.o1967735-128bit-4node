@@ -1,0 +1,12 @@
+#SLURM_JOB_NODELIST      : wn[21-24]
+#SLURM_JOB_CPUS_PER_NODE : 1(x4)
+
+# Modulus: D44DC0CA2A7C693B46A96E01B47C8F15 128 bits - prime 64 bit: address 6 bit, block 58 bit 
+
+Task 3/4 - block Address size 16, range 48-63 
+Task 1/4 - block Address size 16, range 16-31 
+Task 2/4 - block Address size 16, range 32-47 
+Task 0/4 - block Address size 16, range 0-15 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1967735 ON wn21 CANCELLED AT 2023-05-11T19:13:30 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 1967735.0 ON wn21 CANCELLED AT 2023-05-11T19:13:30 DUE TO TIME LIMIT ***

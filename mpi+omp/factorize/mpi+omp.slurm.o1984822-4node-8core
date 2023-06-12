@@ -1,0 +1,137 @@
+#SLURM_JOB_NODELIST      : wn[22-25]
+#SLURM_JOB_CPUS_PER_NODE : 8(x4)
+
+# Modulus: F27F04CC3A51A3090B7D 80 bits - prime 40 bit: address 6 bit, block 34 bit 
+
+Task 0/32 - block Address size 2, range 0-1 
+Task 2/32 - block Address size 2, range 4-5 
+Task 3/32 - block Address size 2, range 6-7 
+Task 4/32 - block Address size 2, range 8-9 
+Task 16/32 - block Address size 2, range 32-33 
+Task 24/32 - block Address size 2, range 48-49 
+Task 5/32 - block Address size 2, range 10-11 
+Task 17/32 - block Address size 2, range 34-35 
+Task 25/32 - block Address size 2, range 50-51 
+Task 6/32 - block Address size 2, range 12-13 
+Task 8/32 - block Address size 2, range 16-17 
+Task 18/32 - block Address size 2, range 36-37 
+Task 26/32 - block Address size 2, range 52-53 
+Task 7/32 - block Address size 2, range 14-15 
+Task 9/32 - block Address size 2, range 18-19 
+Task 19/32 - block Address size 2, range 38-39 
+Task 27/32 - block Address size 2, range 54-55 
+Task 1/32 - block Address size 2, range 2-3 
+Task 10/32 - block Address size 2, range 20-21 
+Task 20/32 - block Address size 2, range 40-41 
+Task 28/32 - block Address size 2, range 56-57 
+Task 11/32 - block Address size 2, range 22-23 
+Task 21/32 - block Address size 2, range 42-43 
+Task 29/32 - block Address size 2, range 58-59 
+Task 12/32 - block Address size 2, range 24-25 
+Task 22/32 - block Address size 2, range 44-45 
+Task 30/32 - block Address size 2, range 60-61 
+Task 13/32 - block Address size 2, range 26-27 
+Task 23/32 - block Address size 2, range 46-47 
+Task 31/32 - block Address size 2, range 62-63 
+Task 14/32 - block Address size 2, range 28-29 
+Task 15/32 - block Address size 2, range 30-31 
+Task 30/32 - block 61 - FOUND: F4C9E8F37B
+Task 30/32 - block 60 - FOUND by thread 0
+Task 30/32  exiting,  time 536.0 sec.  
+Task 31/32 - block 63 - FOUND: FD9A3AAF67
+Task 31/32 - block 62 - FOUND by thread 0
+Task 31/32  exiting,  time 1122.0 sec.  
+Task 12/32 - block 25 - NOT found
+Task 12/32 - block 24 - FOUND by thread 0
+Task 12/32  exiting,  time 2556.0 sec.  
+Task 14/32 - block 29 - NOT found
+Task 14/32 - block 28 - FOUND by thread 0
+Task 14/32  exiting,  time 2556.0 sec.  
+Task 13/32 - block 27 - NOT found
+Task 13/32 - block 26 - FOUND by thread 0
+Task 13/32  exiting,  time 2562.0 sec.  
+Task 15/32 - block 31 - NOT found
+Task 15/32 - block 30 - FOUND by thread 0
+Task 15/32  exiting,  time 2566.0 sec.  
+Task 8/32 - block 17 - NOT found
+Task 8/32 - block 16 - FOUND by thread 0
+Task 8/32  exiting,  time 2572.0 sec.  
+Task 10/32 - block 21 - NOT found
+Task 10/32 - block 20 - FOUND by thread 0
+Task 10/32  exiting,  time 2572.0 sec.  
+Task 11/32 - block 23 - NOT found
+Task 11/32 - block 22 - FOUND by thread 0
+Task 11/32  exiting,  time 2578.0 sec.  
+Task 9/32 - block 19 - NOT found
+Task 9/32 - block 18 - FOUND by thread 0
+Task 9/32  exiting,  time 2578.0 sec.  
+Task 18/32 - block 37 - NOT found
+Task 18/32 - block 36 - FOUND by thread 0
+Task 18/32  exiting,  time 2794.0 sec.  
+Task 19/32 - block 39 - NOT found
+Task 19/32 - block 38 - FOUND by thread 0
+Task 19/32  exiting,  time 2802.0 sec.  
+Task 28/32 - block 57 - NOT found
+Task 28/32 - block 56 - FOUND by thread 0
+Task 28/32  exiting,  time 2812.0 sec.  
+Task 26/32 - block 53 - NOT found
+Task 26/32 - block 52 - FOUND by thread 0
+Task 26/32  exiting,  time 2812.0 sec.  
+Task 24/32 - block 49 - NOT found
+Task 24/32 - block 48 - FOUND by thread 0
+Task 24/32  exiting,  time 2812.0 sec.  
+Task 22/32 - block 45 - NOT found
+Task 22/32 - block 44 - FOUND by thread 0
+Task 22/32  exiting,  time 2814.0 sec.  
+Task 20/32 - block 41 - NOT found
+Task 20/32 - block 40 - FOUND by thread 0
+Task 20/32  exiting,  time 2814.0 sec.  
+Task 16/32 - block 33 - NOT found
+Task 16/32 - block 32 - FOUND by thread 0
+Task 16/32  exiting,  time 2814.0 sec.  
+Task 25/32 - block 51 - NOT found
+Task 25/32 - block 50 - FOUND by thread 0
+Task 25/32  exiting,  time 2818.0 sec.  
+Task 27/32 - block 55 - NOT found
+Task 27/32 - block 54 - FOUND by thread 0
+Task 27/32  exiting,  time 2818.0 sec.  
+Task 29/32 - block 59 - NOT found
+Task 29/32 - block 58 - FOUND by thread 0
+Task 29/32  exiting,  time 2818.0 sec.  
+Task 23/32 - block 47 - NOT found
+Task 23/32 - block 46 - FOUND by thread 0
+Task 23/32  exiting,  time 2818.0 sec.  
+Task 21/32 - block 43 - NOT found
+Task 21/32 - block 42 - FOUND by thread 0
+Task 21/32  exiting,  time 2820.0 sec.  
+Task 17/32 - block 35 - NOT found
+Task 17/32 - block 34 - FOUND by thread 0
+Task 17/32  exiting,  time 2820.0 sec.  
+Task 6/32 - block 13 - NOT found
+Task 6/32 - block 12 - FOUND by thread 0
+Task 6/32  exiting,  time 2846.0 sec.  
+Task 4/32 - block 9 - NOT found
+Task 4/32 - block 8 - FOUND by thread 0
+Task 4/32  exiting,  time 2846.0 sec.  
+Task 0/32 - block 1 - NOT found
+Task 0/32 - block 0 - FOUND by thread 0
+Task 0/32  exiting,  time 2846.0 sec.  
+Task 1/32 - block 3 - NOT found
+Task 1/32 - block 2 - FOUND by thread 0
+Task 1/32  exiting,  time 2850.0 sec.  
+Task 3/32 - block 7 - NOT found
+Task 3/32 - block 6 - FOUND by thread 0
+Task 3/32  exiting,  time 2850.0 sec.  
+Task 5/32 - block 11 - NOT found
+Task 5/32 - block 10 - FOUND by thread 0
+Task 5/32  exiting,  time 2850.0 sec.  
+Task 7/32 - block 15 - NOT found
+Task 7/32 - block 14 - FOUND by thread 0
+Task 7/32  exiting,  time 2852.0 sec.  
+Task 2/32 - block 5 - NOT found
+Task 2/32 - block 4 - FOUND by thread 0
+Task 2/32  exiting,  time 2860.0 sec.  
+
+real	47m47.062s
+user	0m0.020s
+sys	0m0.032s

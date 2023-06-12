@@ -1,0 +1,35 @@
+Overhead di comunicazione: riduzione attraverso la sovrapposizione comunicazione /computazione.
+
+Può verificarsi un overhead di comunicazione se il numero dei nodi incomicnia a crescere, si può ovviare a questa problematica
+usando invece che una singola funzione per computare Jacobi 2 funzioni separate:
+
+    Jacobi_Iterator_CPU_internal(h_T_old, h_T_new, NX, NY); 
+    Jacobi_Iterator_CPU_external(h_T_old, h_T_new, NX, NY);
+
+La prima funzione computa la parte inserna della sottomatrice che viene assegnata ad ogni nodo, la seconda quella esterna che dovrà
+cominicare con i nodi vicini.
+In questo modo si può sovrapporre la comunicazione con il calcolo, e quindi ridurre l'overhead di comunicazione.
+
+Checkpointing. 
+Ogni simulazione  può disporre di un tempo di calcolo limitato. Può essere utile la possibilità di salvare sul 
+sistema di storage lo stato di avanzamento della simulazione in modo da poterlo riprendere in tempi successivi.
+
+Il salvataggio più essere fatto tramite ua funzione (print_colormap) in modo tale da poterlo riprendere in caso di interruzioni
+dovute alla mancanza di tempo o a problemi durante il calcolo, quindi all'inizio del programma si può inserire
+un controllo per cui se è presente il file con la cronologia dei salvataggi allora prendere l'ultima matrice e caricarla
+come h_T_old.
+
+
+
+Valutazioni:
+
+Risultati di mpi_heat_strong.slurm usando --nodes=2 --ntasks-per-node=8
+
+-np Tempo
+1   5.728610
+2   2.881179
+4   1.486917
+8   0.832776
+16  0.469087
+
+

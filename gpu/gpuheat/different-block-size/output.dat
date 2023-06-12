@@ -1,0 +1,8 @@
+# NX=512, NY=512, MAX_ITER=100000 , Blocksize_X=4, Blocksize_Y=4 
+Tempo di esecuzione= 5.970 
+# NX=512, NY=512, MAX_ITER=100000 , Blocksize_X=8, Blocksize_Y=8 
+Tempo di esecuzione= 1.869 
+# NX=512, NY=512, MAX_ITER=100000 , Blocksize_X=16, Blocksize_Y=16 
+Tempo di esecuzione= 1.195 
+# NX=512, NY=512, MAX_ITER=100000 , Blocksize_X=32, Blocksize_Y=32 
+Tempo di esecuzione= 1.248 

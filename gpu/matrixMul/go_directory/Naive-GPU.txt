@@ -1,0 +1,12 @@
+Processing time: 0.080864 (ms), GFLOPS: 21.882074 
+Processing time: 0.367232 (ms), GFLOPS: 130.096896 
+Processing time: 0.993632 (ms), GFLOPS: 245.611920 
+Processing time: 2.057376 (ms), GFLOPS: 316.578688 
+Processing time: 4.212672 (ms), GFLOPS: 341.504448 
+Processing time: 8.027392 (ms), GFLOPS: 320.879648 
+Processing time: 13.852032 (ms), GFLOPS: 314.290688 
+Processing time: 21.118944 (ms), GFLOPS: 312.008608 
+Processing time: 32.236000 (ms), GFLOPS: 302.667904 
+Processing time: 44.956863 (ms), GFLOPS: 299.391840 
+Processing time: 63.468319 (ms), GFLOPS: 290.166208 
+Processing time: 82.984482 (ms), GFLOPS: 288.669664 

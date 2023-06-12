@@ -1,0 +1,25 @@
+Esercitazione svolta seguendo le istruzioni presenti nella pagina Elli https://elly2022.smfi.unipr.it/mod/page/view.php?id=5852
+
+Nuovo file da compilare rinominato omp_heat.c
+
+La compilazione avviene tramite il comando 
+    
+    gcc-12 -fopenmp -O3 -o omp_heat omp_heat.c
+
+Per poter effettuare più run con un numero diverso di thread e vedere quanto sia parallelizzabile
+il task è necessario usare lo script
+
+    omp_heat_scaling.slurm
+
+Per il confronto tra i diversi compilatori (gnu 4, gnu 8 e Intel 19 ) usare lo script slurm 
+
+    hpc_omp_heat_scaling.slurm
+
+In entrambi i casi verranno generati dei file .dat con all'interno le diverse run che poi potranno
+essere usati per il plot.
+
+Per effettuare il plot di comparazione per entrambi gli script slurm bisogna usare lo script python
+
+    python2.7 confronto_plot.py
+
+che genererà omp_heat_compilatori_confronto.png e omp_heat.png

@@ -1,0 +1,24 @@
+#SLURM_JOB_NODELIST: wn26
+####################################
+# HOME perf
+Write to file:
+2048+0 record dentro
+2048+0 record fuori
+2147483648 byte (2,1 GB) copiati, 4,858 s, 442 MB/s
+
+Read from file:
+2048+0 record dentro
+2048+0 record fuori
+2147483648 byte (2,1 GB) copiati, 2,44622 s, 878 MB/s
+####################################
+# SCRATCH perf
+Write to file:
+2048+0 record dentro
+2048+0 record fuori
+2147483648 byte (2,1 GB) copiati, 5,25266 s, 409 MB/s
+
+Read from file:
+2048+0 record dentro
+2048+0 record fuori
+2147483648 byte (2,1 GB) copiati, 3,10417 s, 692 MB/s
+####################################

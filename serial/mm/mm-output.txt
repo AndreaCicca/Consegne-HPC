@@ -1,0 +1,8 @@
+#Malloc matrices a,b,c 2000x2000 of double 
+#Set timer 0 
+#Initialize A, B, and C matrices 
+#Perform matrix multiply
+#Set timer 1 
+#Set timer 2 
+#Dim     Tnp        Tp 
+2000 0.05  15.64

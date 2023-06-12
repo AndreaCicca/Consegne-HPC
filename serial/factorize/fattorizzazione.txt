@@ -1,0 +1,91 @@
+# Fattorizzazione miglioramenti
+
+Test su diverse run
+
+8 bit 
+
+ p : 8C27
+ q : 8C27
+ m : 4CBAADF1
+
+ FOUND : 8C27
+ 
+real	0m0.156s
+user	0m0.154s
+sys	0m0.001s
+
+16 bit 
+
+ p : FB1B
+ q : D727
+ m : D309EE1D
+
+ FOUND : D727
+ 
+real	0m0.230s
+user	0m0.228s
+sys	0m0.001s
+
+20 bit 
+
+ p : F05F3
+ q : DD37B
+ m : CFB67624C1
+
+ FOUND : DD37B
+ 
+real	0m3.919s
+user	0m3.907s
+sys	0m0.001s
+
+22 bit 
+
+ p : 3359DB
+ q : 315E9F
+ m : 9E72DCE3905
+
+ FOUND : 315E9F
+ 
+real	0m28.133s
+user	0m28.065s
+sys	0m0.001s
+
+
+
+
+# Analizzare ed eventualmente realizzare miglioramenti dell'algoritmo
+
+All'aumentare il numero di bit aumenta anche il tempo di computazione 
+per poter eseguire la fattorizzazione.
+
+BN_is_prime e BN_generate_prime sono funzioni deprecate nella versione corrente di openssl quindi
+consiglierei di sostituirle con le loro corrispondenti funzioni aggiornate su OpenSSL 0.9.
+
+Il modo migliore per poter migliorare l'algorimo è quello di parallelizzare l'esecizione della
+fattorizzazione su più task differenti.
+Dato che la fattorizzazione di ogni blocco è indipendente dalle altre, si potrebbe dividere il dominio
+del problema in più sottodomini e creare un software parallelo che possa eseguire la fattorizzazione
+in modo più efficiente su più task differenti (OpenMP o MPI).
+
+Si potrebbe utilizzare con OpenMP o MPI anche un meccenismo master slave.
+
+# Definire la tecnica ottimale  di scomposizione del dominio 
+
+La tecnica ottimale sarebbe quella di dividere il dominio in tanti sottodomini quanti sono i processori quindi tramite
+una grana grossa che permetterebbe di diminuire il tempo sprecato con l'overhead e di aumentare l'efficienza del programma
+in base alla legge di Amdahl (Tp + Tnp)/(Tn/P + Tp + Toh)
+
+# overhead introdotti dalla parallelizzazione
+
+Gli overhead introdotti dalla parallelizzazione sono retivi a:
+- comunicazione tra i task che in questo caso sarano minimi perchè la fattorizzazione di un blocco è indipendente rispetto
+a quella di un altro blocco
+- sincronizzazione tra i task anch'essa minima perchè non ci sono dipendenze tra i blocchi
+- esecuzione join/fork che può non essere trascurabile se si utilizzano molti processori/thread
+- bilanciamento del carico che potrebbe diventare in caso di utilizzo di nodi eterogenei
+
+Si potranno usare 2 tipo diversi di paradagmi per la parallelizzazione:
+- Memoria condivisa (OpenMP),tutti i processori accedono alla memoria come spazio di indirizzamento globale.
+    - Memoria UMA e NUMA
+- Memoria distribuita (MPI), ogni processore possiede una propria memoria locale, che non fa parte dello spazio di indirizzamento degli altri processori
+si vengono a creare dei nodi che dovranno interfacciarsi tra di loro tramite messaggi che si scambieranno.

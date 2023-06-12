@@ -1,0 +1,32 @@
+OpenMP:
+
+Come comunicare a tutti i thread che si è trovato il risultato?
+Si può usare una variabile booleana condivisa che possa servire ai vari thread per conosere la situazione
+attuale del calcolo all'iterno del singolo nodo. Questa variabile dovrà essere condivisa tra tutti i tread.
+
+NB Non si può effettuare un break con openMP quindi bisognerà aggiungere una variabile "skip" per terminare l'esecuzione
+del ciclo for in caso di risultato trovato su un altro nodo.
+
+Con OpenMP si possono gestire anche sessioni master slave.
+
+MPI:
+
+Come per mpi_heat.c ogni nodo farà partire una recive asincrona aspettando che arrivi la comunicazione
+per poi passare tramite un test una variabile a 1 se si trova il risultato in un altro nodo.
+
+
+Analisi modello master slave un modello master-slave
+
+Anche nel caso di MPI+OpenMP si può analizzare il caso master slave.
+Ci sarà un task con rank 0 che distribuirà l'eleno dei bloocchi da testare ai vari nodi e 
+successivamente il lavoro da fare verrà suddiviso tra i vari thread tramite OpenMP.
+
+Il task che distribuirà il lavoro potrà tenere conto di diversi fattori per poter decidere come 
+suddifidere i blocchi, per esempio non tutti i nodi potrebbero avere il medesimo numero di risorse 
+disponobili, quindi prima di distributire il workload se i nodi non sono omogenei bisognerebbe
+preparare una prima fase in cui si raccolgono infazione sulla configurazione attuale del sistema, successivamente
+ognugno dei nodi/thread deve esser consapevole del prorpio ruolo grazie ad una fase preliminare (che abbiamo visto anche
+con heat GPU in cui bisognava raccogliere informazioni dei nodi mpi) e poi si partità con la distribuzione dei
+blocchi di lavoro.
+
+Per poter comunicare il sistema che il blocco è stato trovato si useranno le medesime strategie adottate con openMP e MPI

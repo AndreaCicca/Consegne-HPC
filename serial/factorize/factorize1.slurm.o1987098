@@ -1,0 +1,11 @@
+#SLURM_JOB_NODELIST: wn22
+
+ p : 3359DB
+ q : 315E9F
+ m : 9E72DCE3905
+
+ FOUND : 315E9F
+ 
+real	0m28.133s
+user	0m28.065s
+sys	0m0.001s

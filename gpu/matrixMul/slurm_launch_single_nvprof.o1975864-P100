@@ -1,0 +1,65 @@
+#SLURM_JOB_NODELIST   : wn42
+#CUDA_VISIBLE_DEVICES : 0
+size A=  X ,B=  X 
+==17394== NVPROF is profiling process 17394, command: ./bin/matrixMul -wA=2000 -hA=2000 -wB=2000 -hB=2000
+==17394== Profiling application: ./bin/matrixMul -wA=2000 -hA=2000 -wB=2000 -hB=2000
+==17394== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   33.77%  48.673ms         1  48.673ms  48.673ms  48.673ms  matrixMul_naive(float*, float*, float*, int, int)
+                   19.43%  28.001ms        16  1.7501ms  1.4167ms  1.9868ms  [CUDA memcpy HtoD]
+                   12.82%  18.486ms         1  18.486ms  18.486ms  18.486ms  matrixMul_coalescing(float*, float*, float*, int, int)
+                   10.86%  15.648ms         8  1.9560ms  1.3725ms  5.9731ms  [CUDA memcpy DtoH]
+                    6.16%  8.8832ms         1  8.8832ms  8.8832ms  8.8832ms  matrixMul_tiling(float*, float*, float*, int, int)
+                    5.38%  7.7532ms         1  7.7532ms  7.7532ms  7.7532ms  matrixMul_noBankConflict(float*, float*, float*, int, int)
+                    5.38%  7.7495ms         1  7.7495ms  7.7495ms  7.7495ms  matrixMul(float*, float*, float*, int, int)
+                    2.15%  3.0953ms         1  3.0953ms  3.0953ms  3.0953ms  matrixMul_compOpt(float*, float*, float*, int, int)
+                    2.06%  2.9720ms         1  2.9720ms  2.9720ms  2.9720ms  matrixMul_prefetch(float*, float*, float*, int, int)
+                    2.00%  2.8850ms         1  2.8850ms  2.8850ms  2.8850ms  matrixMul_unroll(float*, float*, float*, int, int)
+      API calls:   48.99%  175.57ms         3  58.522ms  196.33us  175.16ms  cudaMalloc
+                   41.08%  147.23ms        24  6.1347ms  1.5017ms  50.222ms  cudaMemcpy
+                    9.08%  32.544ms         1  32.544ms  32.544ms  32.544ms  cudaThreadExit
+                    0.45%  1.6148ms         3  538.27us  330.06us  648.76us  cudaFree
+                    0.12%  434.60us       101  4.3030us     191ns  208.44us  cuDeviceGetAttribute
+                    0.09%  333.79us         1  333.79us  333.79us  333.79us  cudaGetDeviceProperties
+                    0.07%  263.74us         8  32.967us  24.340us  69.475us  cudaLaunchKernel
+                    0.03%  98.907us        18  5.4940us  2.1740us  26.794us  cudaEventRecord
+                    0.03%  96.926us        18  5.3840us  1.7290us  31.771us  cudaEventCreate
+                    0.02%  84.731us         9  9.4140us  5.5130us  35.869us  cudaEventSynchronize
+                    0.01%  46.420us         1  46.420us  46.420us  46.420us  cuDeviceGetName
+                    0.01%  34.525us         9  3.8360us  2.8670us  8.9600us  cudaEventElapsedTime
+                    0.01%  19.391us         1  19.391us  19.391us  19.391us  cudaGetDevice
+                    0.00%  11.471us         1  11.471us  11.471us  11.471us  cuDeviceGetPCIBusId
+                    0.00%  2.1480us         3     716ns     333ns  1.2950us  cuDeviceGetCount
+                    0.00%  1.8570us         1  1.8570us  1.8570us  1.8570us  cuDeviceTotalMem
+                    0.00%     882ns         2     441ns     280ns     602ns  cuDeviceGet
+                    0.00%     497ns         1     497ns     497ns     497ns  cuDeviceGetUuid
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Tesla P100-PCIE-12GB" with compute capability 6.0
+
+Size: 2000x2000, 2000x2000
+Naive CPU (Golden Reference)
+Processing time: 37673.476562 (ms), GFLOPS: 0.424702 
+GPU SDK Sample
+Processing time: 17.677055 (ms), GFLOPS: 905.128128 
+Total Errors = 0 
+Naive GPU
+Processing time: 53.950432 (ms), GFLOPS: 296.568512 
+Total Errors = 0 
+Tiling GPU
+Processing time: 14.138272 (ms), GFLOPS: 1131.680000 
+Total Errors = 0 
+Global mem coalescing GPU
+Processing time: 23.739649 (ms), GFLOPS: 673.977984 
+Total Errors = 0 
+Remove shared mem bank conflict GPU
+Processing time: 13.002272 (ms), GFLOPS: 1230.554240 
+Total Errors = 0 
+Threads perform computation optimization GPU
+Processing time: 8.338368 (ms), GFLOPS: 1918.840576 
+Total Errors = 0 
+Loop unrolling GPU
+Processing time: 8.510656 (ms), GFLOPS: 1879.996032 
+Total Errors = 0 
+Prefetching GPU
+Processing time: 8.258368 (ms), GFLOPS: 1937.428864 
+Total Errors = 0 

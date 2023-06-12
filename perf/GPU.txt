@@ -1,0 +1,44 @@
+ Confronto tra le GPU
+
+A100:
+- memoria globale = 80GB
+- L2 cache size = 41943040 bytes
+- GPU max clock rate = 1410 MHz (1.41 GHz)
+- cuda cores = 6912 CUDA core
+
+- bandwidth 
+    - host to device = 26.0 GB/s
+    - device to host = 25.7 GB/s
+    - device to device = 1310.9 GB/s
+
+- GFLOP/s in doppia precisione = 7476.131 double-precision GFLOP/s
+
+-----------------------------------------------------------------------------------
+
+P100:
+- memoria globale = 12GB
+- L2 cache size = 3145728 bytes
+- GPU max clock rate = 1329 MHz (1.33 GHz)
+- cuda cores = 3584
+
+- bandwidth 
+    - host to device = 11.8 GB/s
+    - device to host = 13.2 GB/s 
+    - device to device = 382.3
+
+- GFLOP/s in doppia precisione = 2815.405 double-precision GFLOP/s
+
+-----------------------------------------------------------------------------------
+
+V100:
+- memoria globale = 32GB
+- L2 cache size = 6291456 bytes
+- GPU max clock rate = 1380 MHz (1.38 GHz)
+- cuda cores = 5120
+
+- bandwidth 
+    - host to device = 13.1 GB/s
+    - device to host = 13.6 GB/s
+    - device to device = 725.9 GB/s
+
+- GFLOP/s in doppia precisione = 5216.652 double-precision GFLOP/s

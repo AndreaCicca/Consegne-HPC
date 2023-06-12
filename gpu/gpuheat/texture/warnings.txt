@@ -1,0 +1,20 @@
+heat_gpu_texture.cu(150): warning #1215-D: function "tex2D(texture<T, 2, cudaReadModeElementType>, float, float) [with T=float]"
+/hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/texture_fetch_functions.h(198): here was declared deprecated
+
+heat_gpu_texture.cu: In function ‘int main(int, char**)’:
+heat_gpu_texture.cu:78:85: warning: ‘cudaError_t cudaBindTexture2D(size_t*, const texture<T, dim, readMode>&, const void*, const cudaChannelFormatDesc&, size_t, size_t, size_t) [with T = float; int dim = 2; cudaTextureReadMode readMode = (cudaTextureReadMode)0u; cudaError_t = cudaError; size_t = long unsigned int]’ is deprecated (declared at /hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h:1501) [-Wdeprecated-declarations]
+     cudaBindTexture2D(0, tex_T_const, d_T_const, channelDesc, NX, NY, sizeof(float) * NX);
+                                                                                     ^
+heat_gpu_texture.cu:116:30: warning: ‘cudaError_t cudaUnbindTexture(const texture<T, dim, readMode>&) [with T = float; int dim = 2; cudaTextureReadMode readMode = (cudaTextureReadMode)0u; cudaError_t = cudaError]’ is deprecated (declared at /hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h:1766) [-Wdeprecated-declarations]
+     cudaUnbindTexture(tex_T_const);
+                              ^
+/hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h: In instantiation of ‘cudaError_t cudaBindTexture2D(size_t*, const texture<T, dim, readMode>&, const void*, const cudaChannelFormatDesc&, size_t, size_t, size_t) [with T = float; int dim = 2; cudaTextureReadMode readMode = (cudaTextureReadMode)0u; cudaError_t = cudaError; size_t = long unsigned int]’:
+heat_gpu_texture.cu:78:85:   required from here
+/hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h:1511:77: warning: ‘cudaError_t cudaBindTexture2D(size_t*, const textureReference*, const void*, const cudaChannelFormatDesc*, size_t, size_t, size_t)’ is deprecated (declared at /hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:8735) [-Wdeprecated-declarations]
+   return ::cudaBindTexture2D(offset, &tex, devPtr, &desc, width, height, pitch);
+                                                                             ^
+/hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h: In instantiation of ‘cudaError_t cudaUnbindTexture(const texture<T, dim, readMode>&) [with T = float; int dim = 2; cudaTextureReadMode readMode = (cudaTextureReadMode)0u; cudaError_t = cudaError]’:
+heat_gpu_texture.cu:116:30:   required from here
+/hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime.h:1770:32: warning: ‘cudaError_t cudaUnbindTexture(const textureReference*)’ is deprecated (declared at /hpc/share/tools/cuda/11.6.0/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:8839) [-Wdeprecated-declarations]
+   return ::cudaUnbindTexture(&tex);
+                                ^

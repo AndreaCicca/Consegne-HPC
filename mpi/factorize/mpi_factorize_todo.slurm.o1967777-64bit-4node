@@ -1,0 +1,68 @@
+#SLURM_JOB_NODELIST      : wn[20,22-24]
+#SLURM_JOB_CPUS_PER_NODE : 1(x4)
+
+# Modulus: 97219FA6BD3D7735 64 bits - prime 32 bit: address 6 bit, block 26 bit 
+
+Task 0/4 - block Address size 16, range 0-15 
+Task 1/4 - block Address size 16, range 16-31 
+Task 2/4 - block Address size 16, range 32-47 
+Task 3/4 - block Address size 16, range 48-63 
+Task 0/4 - block 15 - NOT found
+Task 0/4 - block 14 - NOT found
+Task 3/4 - block 63 - NOT found
+Task 2/4 - block 47 - NOT found
+Task 1/4 - block 31 - NOT found
+Task 0/4 - block 13 - NOT found
+Task 0/4 - block 12 - NOT found
+Task 2/4 - block 46 - NOT found
+Task 3/4 - block 62 - NOT found
+Task 0/4 - block 11 - NOT found
+Task 1/4 - block 30 - NOT found
+Task 0/4 - block 10 - NOT found
+Task 2/4 - block 45 - NOT found
+Task 3/4 - block 61 - NOT found
+Task 0/4 - block 9 - NOT found
+Task 0/4 - block 8 - NOT found
+Task 1/4 - block 29 - NOT found
+Task 2/4 - block 44 - NOT found
+Task 3/4 - block 60 - NOT found
+Task 0/4 - block 7 - NOT found
+Task 0/4 - block 6 - NOT found
+Task 0/4 - block 5 - NOT found
+Task 1/4 - block 28 - NOT found
+Task 2/4 - block 43 - NOT found
+Task 3/4 - block 59 - NOT found
+Task 0/4 - block 4 - NOT found
+Task 0/4 - block 3 - NOT found
+Task 3/4 - block 58 - NOT found
+Task 2/4 - block 42 - NOT found
+Task 1/4 - block 27 - NOT found
+Task 0/4 - block 2 - NOT found
+Task 0/4 - block 1 - NOT found
+Task 3/4 - block 57 - NOT found
+Task 2/4 - block 41 - NOT found
+Task 0/4 - block 0 - NOT found
+Task 0/4  exiting,  time 70.0 sec.  
+Task 1/4 - block 26 - NOT found
+Task 3/4 - block 56 - NOT found
+Task 2/4 - block 40 - NOT found
+Task 1/4 - block 25 - NOT found
+Task 3/4 - block 55 - NOT found
+Task 2/4 - block 39 - NOT found
+Task 1/4 - block 24 - NOT found
+Task 3/4 - block 54 - NOT found
+Task 2/4 - block 38 - NOT found
+Task 3/4 - block 53 - NOT found
+Task 2/4 - block 37 - NOT found
+Task 1/4 - block 23 - NOT found
+Task 3/4 - block 52 - NOT found
+Task 2/4 - block 36 - NOT found
+Task 1/4 - block 22 - NOT found
+Task 3/4 - block 51 - NOT found
+Task 2/4 - block 35 - NOT found
+Task 3/4 - block 50 - FOUND: C9322BF5
+Task 3/4  exiting,  time 131.0 sec.  
+Task 1/4 - block 21 - NOT found
+Task 1/4  exiting,  time 135.0 sec.  
+Task 2/4 - block 34 - NOT found
+Task 2/4  exiting,  time 138.0 sec.  

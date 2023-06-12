@@ -1,0 +1,14 @@
+# NX=64, NY=64, MAX_ITER=100000 
+# Tempo di esecuzione= 0.456 
+# NX=128, NY=128, MAX_ITER=100000 
+# Tempo di esecuzione= 0.489 
+# NX=256, NY=256, MAX_ITER=100000 
+# Tempo di esecuzione= 0.575 
+# NX=512, NY=512, MAX_ITER=100000 
+# Tempo di esecuzione= 1.213 
+# NX=1024, NY=1024, MAX_ITER=100000 
+# Tempo di esecuzione= 5.160 
+# NX=2048, NY=2048, MAX_ITER=100000 
+# Tempo di esecuzione= 18.242 
+# NX=4096, NY=4096, MAX_ITER=100000 
+# Tempo di esecuzione= 69.476 

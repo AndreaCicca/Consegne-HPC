@@ -1,0 +1,11 @@
+#SLURM_JOB_NODELIST: wn22
+
+ p : F05F3
+ q : DD37B
+ m : CFB67624C1
+
+ FOUND : DD37B
+ 
+real	0m3.919s
+user	0m3.907s
+sys	0m0.001s

@@ -1,0 +1,9 @@
+#SLURM_JOB_NODELIST      : wn21
+#SLURM_JOB_CPUS_PER_NODE : 1
+
+# Modulus: CD2C32D00F3E6CC158F1E069 96 bits - prime 48 bit: address 6 bit, block 42 bit 
+
+Task 0/1 - block Address size 64, range 0-63 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1967732 ON wn21 CANCELLED AT 2023-05-11T19:05:58 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 1967732.0 ON wn21 CANCELLED AT 2023-05-11T19:05:58 DUE TO TIME LIMIT ***

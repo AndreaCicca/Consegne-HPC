@@ -1,0 +1,73 @@
+Setup Log In passworldless
+
+Genero la coppia di chiavi pubbliche e private sul mio client e sull'istanza 
+del server hpc.
+
+Key generation sul mio client tramite ssh-keygen
+
+    ssh-keygen -t rsa
+
+In ~.ssh/ ho il file id_rsa e id_rsa.pub
+
+    id_rsa		id_rsa.pub
+
+La chiave pubblica su login hpc deve essere copiata nel file ~/.ssh/authorized_keys
+
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+Prova del log in passworldless su un nodo del cluster 
+    
+    ssh wn01 date
+
+Non mi viene chiesta nessuna passworld
+
+----------------------------------------------------------------------------------------------------------------------------    
+
+Trasferisco la chiave pubblica del mio client su login.hpc.unipr.it
+
+Devo trasferire la chiave pubblica in ~/.ssh/ nel server di HPC e rinominarla in authorized_keys
+
+    cat ~/.ssh/id_rsa.pub | andrea.ciccarello@login.hpc.unipr.it "mkdir ~/.ssh; cat >> ~/.ssh/authorized_keys"
+
+Contenuto di authorized_keys cat ~/.ssh/authorized_keys
+    
+    ssh-rsa ... andrea@MacBookAirM1
+
+    ssh-rsa ... andrea.ciccarello@ui01.hpc.unipr.it
+
+
+Se provo a fare una prova ed effettuo il collegamento al login.hpc.unipr.it riesco ad accedere senza inserire la passworld
+Su MacOS e Linux il terminale utilizza in automatico la chiave privata id_rsa e quindi non bsiogna selezionarla eslicitamente.
+
+Se ci fosse il bisogno di usare una chiave privata con un nome differente si può far partire l'ssh-agent e aggiungerla con ssh-add ~/.ssh/customkey_rsa
+
+----------------------------------------------------------------------------------------------------------------------------    
+
+
+Didattica-linux
+Per poter collegarmi senza passworld anche a didattica-linux basta copiare la chiave pubblica in ~/.ssh/authorized_keys in didattica-linux.unipr.it
+
+scp .ssh/authorized_keys andrea.ciccarello@studenti.unipr.it@didattica-linux.unipr.it:.ssh/
+
+Contenuto di authorized_keys su didattica-linux cat ~/.ssh/authorized_keys
+    
+    ssh-rsa ... andrea@MacBookAirM1
+
+    ssh-rsa ... andrea.ciccarello@ui01.hpc.unipr.it
+
+----------------------------------------------------------------------------------------------------------------------------    
+
+Sincronizzazione delle cartelle tra didattica linux e login.hpc.unipr.it
+
+"Le prossime esercitazioni le svolgeremo sul cluster HPC, 
+mentre utilizzeremo didattica-linux come repository dei 
+dati e per la pubblicazione via web. Sarà quindi necessario 
+lavorare su login.hpc.unipr.it e copiare i dati al termine dell'attività"
+
+Si andrà ad utilizzare rsync e il comando da usare è già stato caricato sul server di HPC
+
+    /hpc/group/T_2022_HPCPROGPAR/hpc-sync
+
+    rsync -av  ~/HPC2223/perf         ${USER}@studenti.unipr.it@didattica-linux.unipr.it:html/HPC2223/perf
+    rsync -av  ~/HPC2223/serial       ${USER}@studenti.unipr.it@didattica-linux.unipr.it:html/HPC2223/serial
+    rsync -av  ~/HPC2123/openmp/base  ${USER}@studenti.unipr.it@didattica-linux.unipr.it:html/HPC2223/openmp/base

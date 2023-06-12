@@ -1,0 +1,178 @@
+# Fattorizzazione miglioramenti
+
+Come migliorare il master slave seriale
+- Si potrebbe dividere il dominio di lavoro tramite un meccanismo master-slate o in generale OpenMP
+- Si potrebbe togliere il controllo if ( BN_is_prime(x, 5 , NULL, NULL, NULL) )
+- Si potrebbe telere in conto il fatto che la fattorizzazione ripete determinate operazioni (visto a lezione omp_module_intertwined_2.c )
+
+# Utilizzo OpenMP
+
+Per il calcolo del tempo si può usare t1 e t2 adeguati però tramite l'utilizzo di omp_get_wtime() invece di clock()
+
+Per calcolare il tempo in core hours bisogna moltiplicare per il numero di core e dividere per 3600 (secondi in 1 ora)
+
+Bisogna aggiungere l'include <omp.h> e le direttite di preprocessing di OpenMP nella sezione parallelizzabile dentro a block_factorize
+
+
+Le direttive Single e critica possono essere usate per stampare solo una volta e per per gestire la concorrenza
+
+La compilazione sarà 
+    gcc factorize.c -o omp_factorize  -lcrypto -lm -fopenmp 
+
+Rispetto alla normale compilazione vengono usati 3 flag in più:
+-lcrypto
+-lm
+-fopenmp
+
+    omp_factorise.c è la versione presentata dal prof dove le stampe vengono inserite nella sezione critica 
+
+#pragma omp parallel
+{ 
+    #pragma omp single
+    printf ("Totale: %.3f ----  Numero threads: %d \n", tot, omp_get_num_threads());
+    #pragma omp critical
+    {
+    printf("# Thr:%d / %d \n", omp_get_thread_num(), omp_get_num_threads() );
+    }
+
+}
+
+
+# Procedura di check pointing
+
+Una eventuale implementazione della fattorizzazione con la procedura per il checkpoiting incorporata
+permetterebbe al programma di salvarsi i blocchi che sono già stati controllati e quindi permettere in caso di interruzione
+inprevista o volontaria del programma di riprendere l'esecuzione dall'ultimo salvataggio
+
+
+#Master Slave
+
+L'utilizzo del paradigma master slave è utile perchè permette di poter implementare un sistema 
+di check point perchè il master può salvarsi lo stato corrente e per esempio scrivere su un file a quale 
+blocco è arrivato.
+
+Bisogna dividere il programma in 2 parti: master e slave.
+
+ #pragma omp parallel num_threads(2)
+#pragma omp sections
+{
+	#pragma omp section // master 
+        {  
+        // corpo master
+       }
+       
+    #pragma omp section // slave
+    {
+        
+        #pragma omp parallel  num_threads(thr)
+        {
+        // corpo slave
+        } 
+    }
+
+}
+
+Per la procedura di check pointing si potrebbe per esepio far si che gli slave salvino in un file il blocco in cui hanno cercato 
+quando hanno terminato la loto elaborazione e il master alla seconda esecuzione controllerà quel file prima di dare in pasto
+agli slave i nuovi blocchi per vedere a che punto si era arrivati precedentemente.
+
+I slave richiedono nuovo lavoro e poi effettuano la block_factorize nel blocco che gli viene
+comunicato tramite request_new_work
+
+int request_new_work(int t)
+{
+   request=t;
+   omp_unset_lock(&master); // request is ready
+   if (! master_stop)   omp_set_lock(&slave);    // waiting for answer
+   omp_test_lock(&master);   // block master
+   return (response);
+}
+
+dentro al blocco dello slave
+while(! master_stop) 
+{
+    #pragma omp critical (print)
+    printf ("#SLAVE %d: calling request of work.. \n",t);  
+    #pragma omp critical
+    block_num=request_new_work(t); // richiede quale debba essere il nuovo blocco al master
+    block_factorize (block_num);
+    // scrive il block_num in un file se si vuole inserire il checkpoint
+}
+
+Per poter effettuare dei test posso generare dei moduli a 128 bit
+
+openssl genrsa -out rsa_key.pem 128
+openssl rsa -in rsa_key.pem -modulus -noout
+
+    Modulus=E4A9EE62E93C263AC2CDB91829A18803
+
+Con -m posso specificare il modulo al programma e con -a specifico quanto debba essere grande l'addr
+
+
+Master-Slave 72 bit con 8 core
+
+time ./omp_factorize2 -t 8 -m  C1107FA48AE45B16C3  -a 4     #modulus 72 bit, prime 36 bit (4 addr, 32 block)
+
+real	2m59.520s
+user	23m26.388s
+sys	    0m0.006s
+
+
+Master-Slave 80 bit con 8 core.
+
+time ./omp_factorize2 -t 8 -m   E89E4058B29266870335 -a 8    #modulus 80 bit, prime 40 bit (8 addr, 32 block)
+
+real	6m44.234s
+user	39m53.140s
+sys	    0m0.008s
+
+Per provare diverse di combinazioni tra numero di core e dimensione del modulo si può usare il seguente script
+
+#!/bin/bash
+#SBATCH --output=%x.o%j-80bit
+#SBATCH --partition=cpu_guest
+#SBATCH --qos=cpu_guest
+#SBATCH -n 8
+#SBATCH --time=0-6:00:00
+
+module load gnu8
+gcc omp_factorize_master_slave.c -o omp_factorize_master_slave   -lcrypto -lm -fopenmp
+
+for T in 8 4 2 1
+do
+
+#./omp_factorize2 -t $T -m  C1107FA48AE45B16C3  -a 4     #modulus 72 bit, prime 36 bit (4 addr, 32 block)
+time ./omp_factorize_master_slave -t $T -m   E89E4058B29266870335 -a 8    #modulus 80 bit, prime 40 bit (8 addr, 32 block)
+#./omp_factorize2 -t $T -m  D41EEDCA71F14147E3F7A1FD          #modulus 96 bit
+#./omp_factorize2 -t $T -m  B686C5D7A74B840E8B27F840126367F5  #modulus 128 bit
+done
+
+
+Test di esecuzione con omp_factorize2
+
+32 bit 4 core
+--cpus-per-task=4 time ./omp_factorize2 -t 4 -b 32
+0.00user 0.00system 0:00.02elapsed 25%CPU (20 millisecondi)
+
+64 bit 4 core
+--cpus-per-task=4 time ./omp_factorize2 -t 4 -b 32
+28.15user 0.00system 0:07.04elapsed 399%CPU  (7 secondi)
+
+64 bit 16 core
+--cpus-per-task=16 time ./omp_factorize2 -t 16 -b 64
+103.87user 0.00system 0:06.53elapsed 1589%CPU (7 secondi)
+
+72 bit 16 core 
+--cpus-per-task=16 time ./omp_factorize2 -t 16 -b 72
+3448.67user 0.10system 3:35.66elapsed 1599%CPU (215 secondi)
+
+80 bit 64 core
+--cpus-per-task=64 time ./omp_factorize2 -t 64 -b 80
+28532.15user 0.28system 7:27.02elapsed 6382%CPU (447 secondo)
+
+Vedendo questi risultati deduco che sia probabilmente infattibile calcolare direttamente la fattorizzazione a 128 bit.
+Se però avessi la possibilità di effettuarla il calcolo per il core consisterebbe nel:
+
+	tempo totale (s) * numero di core utilizzati / 3600 => core hours
+
+In base ad una interpolazione dovrebbe venire venire 349 core hours con 128 bit
